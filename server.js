@@ -5,6 +5,9 @@ require('dotenv').config();
 app.get('/',(req,res)=>{
     res.send({msg:"Root URL"});
 });
+app.get('/get2',(req,res)=>{
+    res.send({msg:"Root2 URL"});
+});
 
 app.post('/auth',(req,res)=>{
     res.send({msg:"Auth"});
